@@ -2,16 +2,15 @@ import React        from "react"
 import PropTypes    from "prop-types"
 import {StyledView} from "./Styled"
 import {Dimensions} from "react-native";
+import Images from "../../assets/images";
 
-const DeviceHeight = Dimensions.get('window').height;
+
 const DeviceWidth  = Dimensions.get('window').width ;
 
 
-const Compass = ({ children, ...styleProps }) => {
+const Compass = ({ ...styleProps }) => {
     return (
-        <StyledView  source={require('../../assets/images/compassBg.png')}
-                      {...styleProps} >
-        </StyledView>
+        <StyledView source={Images.compassBg}  {...styleProps}/>
     )
 }
 

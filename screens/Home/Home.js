@@ -1,8 +1,9 @@
 import React   from 'react';
-import {View, Text, Image, Animated} from "react-native"
+import {View, Text, Image, Animated} from "react-native";
 import { DangerZone, Location} from 'expo';
-import {CompassView ,Compass} from "../../components/"
+import {CompassView, Compass } from "../../components/";
 import {compassUtils} from "../../utils"
+
 
 class Home extends React.Component {
 
@@ -57,7 +58,7 @@ class Home extends React.Component {
             <CompassView>
                 <Text>{Math.floor(this.state.rot*360)} deg</Text>
                 <Animated.View style={{ transform:[{rotate:rotate}]}}>
-                   <Compass/>
+                    <Compass/>
                 </Animated.View>
             </CompassView>
         );
